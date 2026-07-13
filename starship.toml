@@ -22,7 +22,7 @@ style = "bold red"
 [cmd_duration]
 min_time = 1000
 format = "took [$duration](yellow)"
-style = "yellow"
+style = "bold yellow"
 
 [character]
 success_symbol = "[❯](bold purple)"
