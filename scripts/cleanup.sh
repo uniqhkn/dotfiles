@@ -18,13 +18,13 @@ echo
 echo "[3/4] Removing orphan packages..."
 
 if orphans=$(sudo pacman -Qdtq 2>/dev/null); then
-    if [[ -n "$orphans" ]]; then
-        sudo pacman -Rns $orphans
-    else
-        echo "No orphan packages found."
-    fi
-else
+  if [[ -n "$orphans" ]]; then
+    sudo pacman -Rns $orphans
+  else
     echo "No orphan packages found."
+  fi
+else
+  echo "No orphan packages found."
 fi
 
 echo
